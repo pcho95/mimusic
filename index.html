@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Lato:500" rel="stylesheet">
+ 
+<!-- JS -->
+<script type="text/javascript">
+	function changeImage(element) {
+	document.getElementById('imageReplace').src = element;
+}
+</script>
+ 
+<!-- CSS -->
+<style>
+
+p{ /* Load UBUNTU font for entire page */
+font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+ background-color: #666;
+}
+
+#headBar {
+	width: 100% ;
+	height: 200px;
+	background-color: #000;
+	text-align: center;
+}
+#headBar img {
+	width: auto;
+    height: 100%;
+}
+
+/* Section 1 */
+#h_container_1 {
+	position: relative;
+	width: 100%;
+	height: 205px;
+    zoom: 1; /* IE6&7 */
+	background-image: url('webimage/bg1.jpg');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+#h_bio {
+	position: relative;;
+	top: 20px;
+	width: 95%;
+	height: 90%;
+	margin: auto;
+	background-color: #000;
+	font-size: 22px;
+}
+
+#h_bio_bd {
+	font-family: 'Lato', sans-serif;
+	position: relative;
+	top: 0px;
+	width: 500px;
+	height: 205px;
+	margin: auto;
+	border-color: #FFF;
+	background-color: #000;
+}
+
+#h_container_1:before,
+#h_container_1:after {
+    content: "";
+    display: table;
+}
+
+#h_container_1:after {
+    clear: both;
+}
+
+/* Section 2 */
+#h_container_2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    zoom: 1; /* IE6&7 */
+	background-image: url('webimage/black.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#h_banner_2 {
+	position: relative;
+	width: 100%;
+	/*min-width: 712px;
+	min-height: 30px;*/
+	height: auto;
+	z-index: 15;
+	margin: auto;
+	background-image: url('webimage/black.png');
+	background-repeat: repeat;
+}
+
+#h_banner_2 img {
+	float: left;
+}
+
+#h_container_2:before,
+#h_container_2:after {
+    content: "";
+    display: table;
+}
+
+#h_container_2:after {
+    clear: both;
+}
+
+/* Section 2 Content */
+#h_container_2c {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    zoom: 1; /* IE6&7 */
+	background-color: #000;
+}
+
+#h_container_2c img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#h_container_2c_gal {
+	position: relative;
+	float: left;
+	left: 18%;
+	width: 70%;
+	height: auto;
+    zoom: 1; /* IE6&7 */
+	background-color: #000;
+}
+
+#h_container_2c_gal img {
+	display: inline-block;
+	
+}
+
+
+#h_container_2c:before,
+#h_container_2c:after {
+    content: "";
+    display: table;
+}
+
+#h_container_2c:after {
+    clear: both;
+}
+
+/* Section 3 */
+#h_container_3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    zoom: 1; /* IE6&7 */
+	background-image: url('webimage/black.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#h_banner_3 {
+	position: relative;
+	width: 100%;
+	/*min-width: 712px;
+	min-height: 30px;*/
+	height: auto;
+	z-index: 15;
+	margin: auto;
+	background-image: url('webimage/black.png');
+	background-repeat: repeat;
+}
+
+#h_banner_3 img {
+	float: right;
+}
+
+#h_container_3:before,
+#h_container_3:after {
+    content: "";
+    display: table;
+}
+
+#h_container_3:after {
+    clear: both;
+}
+
+
+/* Section 4 */
+#h_container_4 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    zoom: 1; /* IE6&7 */
+	background-image: url('webimage/black.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#h_banner_4 {
+	position: relative;
+	width: 100%;
+	/*min-width: 712px;
+	min-height: 30px;*/
+	height: auto;
+	z-index: 15;
+	margin: auto;
+	background-image: url('webimage/black.png');
+	background-repeat: repeat;
+}
+
+#h_banner_4 img {
+	float: left;
+}
+
+#h_container_4:before,
+#h_container_4:after {
+    content: "";
+    display: table;
+}
+
+#h_container_4:after {
+    clear: both;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="headBar">
+    	<font size="50" color="#FFFFFF">
+       		<img src="webimage/banner.png" alt="BANNER" >
+        	</font> 
+    </div>
+    
+<div id="h_container_1">
+	<div id="h_bio_bd">
+    	<div id="h_bio">
+        	<font color="#FFFFFF">
+        Hi. </font><font color="#00CCFF">My name is Paul.</font><font color="#FFFFFF"> 22 years old, I have degrees in Computer Science and Studio Arts. My focuses are </font><font color="#00CCFF">art, music, and software development</font><font color="#FFFFFF">. On top of this, I have a personal passion for video editing. If you need concepts, sounds, programs, or visual FX, </font><font color="#00CCFF">I'm your guy</font><font color="#FFFFFF">.
+        	</font></div>
+        </div>
+    </div>
+    
+<div id="h_container_2">
+	<div id="h_banner_2"> <img src="webimage/hdr_art.png" />
+    	</div>
+    </div>	
+    
+<div id="h_container_2c">
+	<div id="h_container_2c_image">
+    	<img src="art/full/s5.png" alt="Images" id="imageReplace"/><br />
+        </div>
+        <div id="h_container_2c_gal">
+        <a href="#" onclick="changeImage('art/full/s1.png'); return false;"><img src="art/s1_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/s2.png'); return false;"><img src="art/s2_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/s3.png'); return false;"><img src="art/s3_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/s4.png'); return false;"><img src="art/s4_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/s5.png'); return false;"><img src="art/s5_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/s6.png'); return false;"><img src="art/s6_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/purp.png'); return false;"><img src="art/purp_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/ds.png'); return false;"><img src="art/ds_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/knifegirl.png'); return false;"><img src="art/knifegirl_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/run.gif'); return false;"><img src="art/run_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/cadets.png'); return false;"><img src="art/cadets_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/solip.png'); return false;"><img src="art/solip_ico.png" /></a> 
+		<a href="#" onclick="changeImage('art/full/honest.png'); return false;"><img src="art/honest_ico.png" /></a>
+        <a href="#" onclick="changeImage('art/full/pink.png'); return false;"><img src="art/pink_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/tanky.png'); return false;"><img src="art/tanky_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/teddy.png'); return false;"><img src="art/teddy_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/joj.png'); return false;"><img src="art/joj_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/skull.gif'); return false;"><img src="art/skull_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/coffee.png'); return false;"><img src="art/coffee_ico.png" /></a> 
+        <a href="#" onclick="changeImage('art/full/bench.png'); return false;"><img src="art/bench_ico.png" /></a> 
+
+        
+		
+    </div>
+</div>
+    
+<div id="h_container_3">
+	<div id="h_banner_3"> <img src="webimage/hdr_mus.png" />
+    	</div>
+    </div>
+    
+<div id="h_container_4">
+	<div id="h_banner_4"> <img src="webimage/hdr_pro.png" />
+    	</div>
+    </div>
+    
+</body>
+</html>
