@@ -30,6 +30,33 @@ body {
  background-color: #666;
 }
 
+p.mainText {
+	text-align: left;
+	font-size: 14pt;
+	line-height: 01.3;
+	color: #ffffff;
+}
+
+p.headText {
+	line-height: 0.2;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 24pt;
+	color: #FFC;
+	text-shadow: 2px 2px #000000;
+}
+	
+#content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#content_text {
+	width: 70%;
+	margin: auto;
+}
+
 #headBar {
 	width: 100% ;
 	height: 200px;
@@ -87,6 +114,7 @@ body {
 #h_container_2 {
 	position: relative;
 	width: 100%;
+	/* max-width: 600px; */
 	height: 100%;
     zoom: 1; /* IE6&7 */
 	background-image: url('webimage/black.png');
@@ -95,8 +123,9 @@ body {
 }
 
 #h_banner_2 {
+	display: block;
 	position: relative;
-	width: 100%;
+	width: 80%;
 	/*min-width: 712px;
 	min-height: 30px;*/
 	height: auto;
@@ -161,146 +190,86 @@ body {
     clear: both;
 }
 
-/* Section 3 */
-#h_container_3 {
-	position: relative;
-	width: 100%;
-	height: 100%;
-    zoom: 1; /* IE6&7 */
-	background-image: url('webimage/black.png');
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
-
-#h_banner_3 {
-	position: relative;
-	width: 100%;
-	/*min-width: 712px;
-	min-height: 30px;*/
-	height: auto;
-	z-index: 15;
-	margin: auto;
-	background-image: url('webimage/black.png');
-	background-repeat: repeat;
-}
-
-#h_banner_3 img {
-	float: right;
-}
-
-#h_container_3:before,
-#h_container_3:after {
-    content: "";
-    display: table;
-}
-
-#h_container_3:after {
-    clear: both;
-}
-
-
-/* Section 4 */
-#h_container_4 {
-	position: relative;
-	width: 100%;
-	height: 100%;
-    zoom: 1; /* IE6&7 */
-	background-image: url('webimage/black.png');
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
-
-#h_banner_4 {
-	position: relative;
-	width: 100%;
-	/*min-width: 712px;
-	min-height: 30px;*/
-	height: auto;
-	z-index: 15;
-	margin: auto;
-	background-image: url('webimage/black.png');
-	background-repeat: repeat;
-}
-
-#h_banner_4 img {
-	float: left;
-}
-
-#h_container_4:before,
-#h_container_4:after {
-    content: "";
-    display: table;
-}
-
-#h_container_4:after {
-    clear: both;
-}
-
 </style>
 
 </head>
 
 <body>
 
-<div id="headBar">
-    	<font size="50" color="#FFFFFF">
-       		<img src="webimage/banner.png" alt="BANNER" >
-        	</font> 
-    </div>
-    
-<div id="h_container_1">
-	<div id="h_bio_bd">
-    	<div id="h_bio">
-        	<font color="#FFFFFF">
-        Hi. </font><font color="#00CCFF">My name is Paul.</font><font color="#FFFFFF"> 22 years old, I have degrees in Computer Science and Studio Arts. My focuses are </font><font color="#00CCFF">art, music, and software development</font><font color="#FFFFFF">. On top of this, I have a personal passion for video editing. If you need concepts, sounds, programs, or visual FX, </font><font color="#00CCFF">I'm your guy</font><font color="#FFFFFF">.
-        	</font></div>
+<!-- Page Header -->
+    <div id="headBar">
+            <font size="50" color="#FFFFFF">
+                <img src="webimage/banner.png" alt="BANNER" >
+                </font> 
+        </div>
+<!-- Section Header: Art -->
+    <div id="h_container_2">
+        <div id="h_banner_2"> <img src="webimage/hdr_art.png" />
+            </div>
+        </div>	
+       
+<!-- Gallery --> 
+    <div id="h_container_2c">
+        <div id="h_container_2c_image">
+            <img src="art/full/s5.png" alt="Images" id="imageReplace"/><br />
+            </div>
+            <div id="h_container_2c_gal">
+            <a href="#" onclick="changeImage('art/full/s1.png'); return false;"><img src="art/s1_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/s2.png'); return false;"><img src="art/s2_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/s3.png'); return false;"><img src="art/s3_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/s4.png'); return false;"><img src="art/s4_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/s5.png'); return false;"><img src="art/s5_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/s6.png'); return false;"><img src="art/s6_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/purp.png'); return false;"><img src="art/purp_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/ds.png'); return false;"><img src="art/ds_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/knifegirl.png'); return false;"><img src="art/knifegirl_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/run.gif'); return false;"><img src="art/run_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/cadets.png'); return false;"><img src="art/cadets_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/solip.png'); return false;"><img src="art/solip_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/honest.png'); return false;"><img src="art/honest_ico.png" /></a>
+            <a href="#" onclick="changeImage('art/full/pink.png'); return false;"><img src="art/pink_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/tanky.png'); return false;"><img src="art/tanky_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/teddy.png'); return false;"><img src="art/teddy_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/joj.png'); return false;"><img src="art/joj_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/skull.gif'); return false;"><img src="art/skull_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/coffee.png'); return false;"><img src="art/coffee_ico.png" /></a> 
+            <a href="#" onclick="changeImage('art/full/bench.png'); return false;"><img src="art/bench_ico.png" /></a> 
         </div>
     </div>
     
-<div id="h_container_2">
-	<div id="h_banner_2"> <img src="webimage/hdr_art.png" />
-    	</div>
-    </div>	
-    
-<div id="h_container_2c">
-	<div id="h_container_2c_image">
-    	<img src="art/full/s5.png" alt="Images" id="imageReplace"/><br />
+<!-- Section Header: Design -->    
+    <div id="h_container_2">
+        <div id="h_banner_2"> <img src="webimage/hdr_des.png" />
+            </div>
+        </div> 
+         
+<!-- Content: Design -->
+	<div id="content">
+    	<div id="content_text">
+		<p class="headText"> Occurio </p>	    
+	    <p class="mainText"> OCCURIO is a hi-fi prototype designed as a senior project for my User Centered Design course at university. The result of an entire semester's work, Occurio is an application front end that allows students to easily find and list on-campus events, whether they be hosted by students or faculty. <br /><br /> I worked in a team with 2 other students to incorporate the knowledge and methods we learned in our class to create an informed and fluid prototype. Behind the final product are many interviews, experience maps, icon sketches, and whiteboard drawings of layouts. <br /><br  /> <a href="https://pcho95.github.io/OccurioHIFI/">The prototype can be found by clicking here</a></p>	 
+		</div>
+    </div>
+            
+<!-- Section Header: Programming -->    
+    <div id="h_container_2">
+        <div id="h_banner_2"> <img src="webimage/hdr_pro.png" />
+            </div>
         </div>
-        <div id="h_container_2c_gal">
-        <a href="#" onclick="changeImage('art/full/s1.png'); return false;"><img src="art/s1_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/s2.png'); return false;"><img src="art/s2_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/s3.png'); return false;"><img src="art/s3_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/s4.png'); return false;"><img src="art/s4_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/s5.png'); return false;"><img src="art/s5_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/s6.png'); return false;"><img src="art/s6_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/purp.png'); return false;"><img src="art/purp_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/ds.png'); return false;"><img src="art/ds_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/knifegirl.png'); return false;"><img src="art/knifegirl_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/run.gif'); return false;"><img src="art/run_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/cadets.png'); return false;"><img src="art/cadets_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/solip.png'); return false;"><img src="art/solip_ico.png" /></a> 
-		<a href="#" onclick="changeImage('art/full/honest.png'); return false;"><img src="art/honest_ico.png" /></a>
-        <a href="#" onclick="changeImage('art/full/pink.png'); return false;"><img src="art/pink_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/tanky.png'); return false;"><img src="art/tanky_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/teddy.png'); return false;"><img src="art/teddy_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/joj.png'); return false;"><img src="art/joj_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/skull.gif'); return false;"><img src="art/skull_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/coffee.png'); return false;"><img src="art/coffee_ico.png" /></a> 
-        <a href="#" onclick="changeImage('art/full/bench.png'); return false;"><img src="art/bench_ico.png" /></a> 
-
         
-		
+<!-- Content: Programming -->
+	<div id="content">
+    	<div id="content_text">
+		<p class="headText"> glsl es shaders </p>	    
+	    <p class="mainText"> My latest foray into graphics-related technology is writing shaders using GLSL ES. Shaders, programmable parts of the graphics pipeline, allow me to perform visual effects and transformations at a very low cost to program efficiency, since shaders are GPU operations. The choice to us GLSL ES comes from it's portablility and popularity in embdedded systems. Many of my shaders are meant for 2D graphics and effects, but my more recent shaders are focused on 3D visuals; depth-based blur, vertex-manipulated animation, shadow-mapping, and related methods.</p>	 
+		</div>
     </div>
-</div>
     
-<div id="h_container_3">
-	<div id="h_banner_3"> <img src="webimage/hdr_mus.png" />
-    	</div>
-    </div>
-    
-<div id="h_container_4">
-	<div id="h_banner_4"> <img src="webimage/hdr_pro.png" />
-    	</div>
+	<div id="content">
+    	<div id="content_text">
+		<p class="headText"> MotherSea </p>	    
+	    <p class="mainText"> MOTHERSEA is a short game made for a GameMaker-focused game jam within 72 hours from scratch. Awarded 2nd place, as well as "Best Presentation," the game focuses on a small fish & squid duo using light orbs to search for stranded fish lost in the darkness of the deep ocean. This game was my first serious attempt to use shaders to achieve an effect that would shape the user's experience. Instead of fading from lightness to darkness with an alpha blend, as is typically done for lighting, the shader reads the light value of a texture buffer and swaps the colour to reflect how bright that pixel currently is. This allows the game to display no more than 4-5 colours across the entire screen, while still creating an environment that is clear and readable. </p>	 
+		</div>
     </div>
     
 </body>
