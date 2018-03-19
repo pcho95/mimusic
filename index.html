@@ -5,35 +5,17 @@
 <title>PAUL CHO</title>
 
 <!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Lato:500" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Lato:500" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css?family=Nunito:400,900i" rel="stylesheet"> 
 
 <!-- JS -->
 <script type="text/javascript">
-	//change image on click
+	/*change image on click
 	function changeImage(element) {
 		document.getElementById('imageReplace').src = element;
-		}
-	//lerp between colors
-	function lerpColor(a, b, amount) { 
-	
-		var ah = parseInt(a.replace(/#/g, ''), 16),
-			ar = ah >> 16, ag = ah >> 8 & 0xff, ab = ah & 0xff,
-			bh = parseInt(b.replace(/#/g, ''), 16),
-			br = bh >> 16, bg = bh >> 8 & 0xff, bb = bh & 0xff,
-			rr = ar + amount * (br - ar),
-			rg = ag + amount * (bg - ag),
-			rb = ab + amount * (bb - ab);
-	
-		return '#' + ((1 << 24) + (rr << 16) + (rg << 8) + rb | 0).toString(16).slice(1);
-		}
+		}*/ //OUTDATED
 		
-	//Update background color
-	function changeBackground(color) {
-	   document.body.style.background = color;
-		}
-//-----
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -58,11 +40,7 @@ function showDivs(n) {
 <!-- CSS -->
 <style>
 
-:root {
-    --col-back: #3C342F;
-	--col-head: #FCD0A0;
-	--col-line: #F60;
-	
+:root { /* Colour Guide, Custom */
 	--col-red: #fe4a49;
 	--col-yellow: #fed766;
 	--col-green: #4dccbd;
@@ -72,8 +50,7 @@ function showDivs(n) {
 	--col-white: #FFF;
 }
 
-p{ /* Load UBUNTU font for entire page */
-/* font-family: 'Ubuntu', sans-serif; */
+p{
 font-family: 'Nunito', sans-serif;
 }
 
@@ -88,6 +65,14 @@ body {
 p.mainText {
 	text-align: left;
 	font-size: 14pt;
+	line-height: 01.3;
+	color: #ffffff;
+}
+
+p.centerText {
+	text-align: center;
+	font-size: 12pt;
+	font-style: italic;
 	line-height: 01.3;
 	color: #ffffff;
 }
@@ -131,10 +116,14 @@ a:visited {
 	font-family: 'Nunito', sans-serif;
 	position: fixed;
 	bottom: 0px;
-	right: 4px;
+	right: 0px;
 	text-align: right;
 	color: var(--col-white);
 	z-index: 10;
+	background-color: var(--col-red);
+	border-style: solid;
+	border-color: var(--col-red);
+	border-top-left-radius: 10px;
 }
 
 #headBar {
@@ -241,7 +230,7 @@ a:visited {
 	background-color: var(--col-red);
 	top: 0px;
 	left: 17%;
-	z-index: 1;
+	z-index: 0;
 }
 
 #vLineYellow {
@@ -251,7 +240,7 @@ a:visited {
 	background-color: var(--col-yellow);
 	top: 0px;
 	left: 18%;
-	z-index: 1;
+	z-index: 0;
 }
 
 #vLineGreen {
@@ -261,7 +250,7 @@ a:visited {
 	background-color: var(--col-green);
 	top: 0px;
 	left: 19%;
-	z-index: 1;
+	z-index: 0;
 }
 	
 #content {
@@ -307,90 +296,31 @@ a:visited {
 #content img {
 	display: block;
 	margin: auto;
-	box-shadow: 5px 5px #000;
+	box-shadow: 2px 2px 8px var(--col-black);
 }
 
-/* Section 2 */
-#h_container_2 {
+/* Section Divider */
+#sectionBar {
 	position: relative;
 	width: 100%;
-	/* max-width: 600px; */
 	height: 40px;;
     zoom: 1; /* IE6&7 */
 	background-color: var(--col-white);
-    background-repeat: repeat;
-    background-attachment: fixed;
 	z-index: 4;
 }
 
-#h_banner_2 {
-	display: block;
-	position: relative;
-	width: 80%;
-	/*min-width: 712px;
-	min-height: 30px;*/
-	height: auto;
-	z-index: 15;
-	margin: auto;
-	background-image: url('webimage/black.png');
-	background-repeat: repeat;
-}
-
-#h_banner_2 img {
-	float: left;
-}
-
-#h_container_2:before,
-#h_container_2:after {
-    content: "";
-    display: table;
-}
-
-#h_container_2:after {
-    clear: both;
-}
-
-/* Section 2 Content */
-#h_container_2c {
-	position: relative;
-	width: 100%;
-	height: 100%;
-    zoom: 1; /* IE6&7 */
-	background-color: #000;
-}
-
-#h_container_2c img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#h_container_2c_gal {
-	position: relative;
-	float: left;
-	left: 18%;
-	width: 70%;
-	height: auto;
-    zoom: 1; /* IE6&7 */
-	background-color: #000;
-}
-
-#h_container_2c_gal img {
-	display: inline-block;
+/* Saved for Potential Future Use */
+	/*
+	#s_container:before,
+	#h\s_container:after {
+		content: "";
+		display: table;
+	}
 	
-}
-
-
-#h_container_2c:before,
-#h_container_2c:after {
-    content: "";
-    display: table;
-}
-
-#h_container_2c:after {
-    clear: both;
-}
-
+	#s_container:after {
+		clear: both;
+	}
+	*/
 </style>
 
 </head>
@@ -404,7 +334,7 @@ a:visited {
                 </font> 
         </div>
 <!-- Section Header: Art -->
-    <div id="h_container_2">
+    <div id="sectionBar">
     	<div id="circleOffset">
             <div id="circleText"><p class="sectionText"> art </p></div>
         	</div>
@@ -430,6 +360,7 @@ a:visited {
 
             <div id="buttonCase">
                 <div id="galleryButton" onclick="plusDivs(-1)">&#10094;</div>
+                <div style="color: var(--col-blue); text-shadow: 0px 0px var(--col-blue);"> _ _ _ _ _ </div>
                 <div id="galleryButton" onclick="plusDivs(+1)">&#10095;</div>
             </div>
             
@@ -442,7 +373,7 @@ a:visited {
     </div>
     
 <!-- Section Header: Design -->    
-    <div id="h_container_2">
+    <div id="sectionBar">
     	<div id="circleOffset">
             <div id="circleText"><p class="sectionText"> design </p></div>
         	</div>
@@ -453,19 +384,23 @@ a:visited {
 	<div id="content">
         <div id="content_head"> <p class="headText">&#9673 Occurio </p> </div>
     	<div id="content_text">   
-	    <p class="mainText"><img src="programs/occurio.png" class="centerImage" /><br /> OCCURIO is a hi-fi prototype designed as a senior project for my User Centered Design course at university. The result of an entire semester's work, Occurio is an application front end that allows students to easily find and list on-campus events, whether they be hosted by students or faculty. <br /><br /> I worked in a team with 2 other students to incorporate the knowledge and methods we learned in our class to create an informed and fluid prototype. Behind the final product are many interviews, experience maps, icon sketches, and whiteboard drawings of layouts. <br /><br  /> <a href="https://pcho95.github.io/OccurioHIFI/">The in-browser prototype can be found by clicking here.</a></p>	 
+	    <p class="mainText"><img src="programs/occurio.png" class="centerImage" /><br /> OCCURIO is a hi-fi prototype designed as a senior project for my UXD course at university. Built while learning the basic principles of UXD, Occurio is an application front-end that allows students to easily find, share, and list events happening around campus, whether they be hosted by students, student leaders, or faculty.<br /><br />
+
+Aiming for an informed and fluid design, 2 other students and I used interview results, experience maps, iconography guides, and many, MANY whiteboard drawings to make the most appropriate design choices. Within the group, my primary responsibility was translating our rough design ideas into concrete wireframes, visual guides, and eventually the final prototype. <br /><br />
+
+I learned a lot about the UXD process from this project, and found it helped me to pinpoint my personal strengths as a graphic designer in a digital medium. <br /><br  /></p> <p class="centerText"> <a href="https://pcho95.github.io/OccurioHIFI/">The in-browser prototype can be found by clicking here.</a></p>	 
 		</div>
     </div>
     
 	<div id="content">
         <div id="content_head"> <p class="headText">&#9673 Soundsky </p> </div>
     	<div id="content_text">   
-	    <p class="mainText"> SOUNDSKY is a simple music-streaming mockup, meant to be a study in how to design an interactive interfact without using the native tools to do so. This means that Soundsky was not built using an application that speeds up the prototyping process. My desire here was to make sure I understood what actually happens behind the scenes of a prototype, instead of letting a design application handle it for me. I personally feel that the more I understand the intricacies of a process, the better I can manipulate the time-saving tools to maximize effects and minimize headaches.<br /><br  /> <a href="https://pcho95.github.io/soundsky/">The in-browser prototype can be found by clicking here.</a></p>	 
+	    <p class="mainText"> SOUNDSKY is a simple music-streaming mockup, meant to be a study in how to design an interactive interfact without using the native tools to do so. This means that Soundsky was not built using an application that speeds up the prototyping process. My desire here was to make sure I understood what actually happens behind the scenes of a prototype, instead of letting a design application handle it for me. I personally feel that the more I understand the intricacies of a process, the better I can manipulate the time-saving tools to maximize effects and minimize headaches.<br /><br  /></p> <p class="centerText"> <a href="https://pcho95.github.io/soundsky/">The in-browser prototype can be found by clicking here.</a></p>	 
 		</div>
     </div>
             
 <!-- Section Header: Programming -->    
-    <div id="h_container_2">
+    <div id="sectionBar">
     	<div id="circleOffset">
             <div id="circleText"><p class="sectionText"> programming </p></div>
         	</div>
@@ -477,9 +412,9 @@ a:visited {
         <div id="content_head"> <p class="headText">&#9673 OpenGL ES Shaders </p> </div>
     	<div id="content_text">	    
 	    <p class="mainText"> My latest foray into graphics-related technology is writing shaders using GLSL ES. Shaders, programmable parts of the graphics pipeline, allow me to perform visual effects and transformations at a very low cost to program efficiency, since shaders are GPU operations. The choice to use GLSL ES comes from it's portablility and popularity in embdedded systems. Many of my shaders are meant for 2D graphics and effects, but my more recent shaders are focused on 3D visuals; depth-based blur, vertex-manipulated animation, shadow-mapping, and other related methods.
-        <br /><img src="programs/opengl01.png" class="centerImage" /> <div style="text-align: center; color: #FFF">Custom shadow mapping with point lights (cube map). Multi-light support!</div>
-        <br /><img src="programs/opengl02.png" class="centerImage" /><br /> <div style="text-align: center; color: #FFF">Custom 3D rigging & animator.</div>	 
-        <br /><img src="programs/opengl03.png" class="centerImage" /><br /> <div style="text-align: center; color: #FFF">3D rigging & animator, vertex & bone view activated.</div></p>	 
+        <br /><img src="programs/opengl01.png" class="centerImage" /><p class="centerText">Custom shadow mapping with point lights (cube map). Multi-light support!</p>
+        <br /><img src="programs/opengl02.png" class="centerImage" /><p class="centerText">Custom 3D rigging & animator.</p>	 
+        <br /><img src="programs/opengl03.png" class="centerImage" /><p class="centerText">3D rigging & animator, vertex & bone view activated.</p></p>	 
 		</div>
     </div>
     
@@ -488,23 +423,29 @@ a:visited {
 	<div id="content">
     	<div id="content_head"> <p class="headText">&#9673 MotherSea </p> </div>
     	<div id="content_text">	    
-	    <p class="mainText"> <img src="programs/ms01.png" class="centerImage" /><br />MOTHERSEA is a short game made for a GameMaker-focused game jam within 72 hours from scratch. Awarded 2nd place, as well as "Best Presentation," the game focuses on a small fish & squid duo using light orbs to search for stranded fish lost in the darkness of the deep ocean. This game was my first serious attempt to use shaders to achieve an effect that would shape the user's experience. Instead of fading from lightness to darkness with an alpha blend, as is typically done for lighting, the shader reads the light value of a texture buffer and swaps the colour to reflect how bright that pixel currently is. This allows the game to display no more than 4-5 colours across the entire screen, while still creating an environment that is clear and readable. <br />
-        <br /><img src="programs/ms02.png" class="centerImage" /> <div style="text-align: center; color: #FFF">Ink-based attack!</div>
-        <br /><img src="programs/ms03.png" class="centerImage" /><br /> <div style="text-align: center; color: #FFF">The 3 steps of the shader, in reverse order</div>
-        </p>	 
+	    <p class="mainText"> <img src="programs/ms01.png" class="centerImage" /><br />MOTHERSEA is a short game made for the GMC Game Jam #6, built from scratch within 72 hours. Awarded 2nd Place and 'Best Presentation,' MotherSea is about a small fish & squid duo on the search for fish that have lost their way in the darkness of the deep ocean. The fish can control light orbs found around the map for navigation, and the squid uses ink to propel itself and attack. <br />
+        <br /><img src="programs/ms02.png" class="centerImage" /> <p class="centerText">Ink-based attack!
+        </p></p>
+        <p class="mainText">This game was my first serious attempt to use visual design & shaders to create an effect that would influence the gameplay itself, instead of simply looking pretty. The effect works by rendering the shadowing using alpha blending and passing that render to a shader which rounds each given pixel's colour to one of 5 colours in a pre-determined pallete based upon luminescence. The result is a visual design that is minimalistic and smooth while still being readable and functional enough to play.<br />
+        <br /><img src="programs/ms03.png" class="centerImage" /> <p class="centerText">The 3 steps of the shader, in reverse order
+        </p></p>	 
 		</div>
     </div>
     
     <!-- vertical lines -->
+    <div id="vLineRed"> </div>
+    <div id="vLineYellow"> </div>
+    <div id="vLineGreen"> </div>
 
-        <div id="vLineRed"> </div>
-        <div id="vLineYellow"> </div>
-        <div id="vLineGreen"> </div>
-
-    
-    <!-- <div id="cBack"> </div> -->
     <div id="cBackLine"> </div>
-    <div id="credits">website and all content created/designed by paul cho</div>
+    <div id="credits">website and all content <br />created/designed by paul cho 2018</div>
+    
+    <!--
+    <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Cannot play audio within this browser.
+    </audio> 
+    -->
         
 </body>
 </html>
